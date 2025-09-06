@@ -27,7 +27,7 @@ return {
       popupmenu = {
         relative = "editor",
         position = {
-          row = 8,
+          row = 3,
           col = "50%",
         },
         size = {

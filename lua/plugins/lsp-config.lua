@@ -1,7 +1,10 @@
---BUG: mason not working  
+--BUG: mason not working
 return {
 	{
 		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup()
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -29,11 +32,10 @@ return {
 
 				capabilities = capabilities,
 			})
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
-			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
-			vim.diagnostic.config({
-				virtual_text = true,
-			})
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+			vim.keymap.set("n", "<Esc>", vim.lsp.buf.clear_references, { desc = "Go to declaration" })
+			vim.diagnostic.config({virtual_text = true,	})
 		end,
 	},
 }
