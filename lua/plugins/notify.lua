@@ -3,6 +3,7 @@ return {
 	config = function()
 		require("notify").setup({
 			timeout = 1000,
+      background_colour = "#000000",
 			top_down = false,
 			stages = "fade",
 			max_height = 10,
