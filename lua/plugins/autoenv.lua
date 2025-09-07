@@ -28,11 +28,5 @@ return {
     map("n", "<leader>vp", function()
       require("swenv.api").pick_venv()
     end, { desc = "Pick virtual env" })
-    map("n", "<leader>vg", function()
-      require("swenv.api").get_venv()
-    end, {})
-    map("n", "<leader>vs", function()
-      require("swenv.api").set_venv("venv_fuzzy_name")
-    end, {})
   end,
 }
