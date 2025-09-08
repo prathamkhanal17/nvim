@@ -6,7 +6,7 @@ return {
     swenv.setup({
       venvs_path = vim.fn.expand("~/venvs"),
       post_set_venv = function()
-        local client = vim.lsp.get_clients({ name = "ruff" })[1]
+        local client = vim.lsp.get_clients({ name = "pyright" })[1]
         if not client then
           return
         end
