@@ -8,8 +8,4 @@ return {
 			vim.keymap.set("n", "<leader>gs", ":Telescope git_status<CR>", { desc = "Fuzzy find git status" })
 		end,
 	},
-	{
-		"tpope/vim-fugitive",
-		cmd = "Git",
-	},
 }
