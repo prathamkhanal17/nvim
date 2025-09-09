@@ -9,4 +9,3 @@ map('n', '<leader>wl', '<C-w>l', { desc = "Switch focus to right window" })
 map('n', '<leader>wj', '<C-w>j', { desc = "Switch focus to lower window" })
 map('n', '<leader>wk', '<C-w>k', { desc = "Switch focus to upper window" })
 map('n', '<leader>wh', '<C-w>h', { desc = "Switch focus to left window" })
--- TODO: Add some more generic keymaps
