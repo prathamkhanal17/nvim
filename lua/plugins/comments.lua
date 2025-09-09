@@ -1,6 +1,8 @@
 return {
 	{
 		"numToStr/Comment.nvim",
+		lazy = true,
+		event = "BufReadPost",
 		keys = { "gcc", "gbc", "gc", "gb" },
 		opts = {},
 		config = function()
@@ -32,6 +34,7 @@ return {
 	},
 	{
 		"folke/todo-comments.nvim",
+		lazy = true,
 		cmd = "TodoTelescope",
 		event = "BufReadPre",
 		dependencies = { "nvim-lua/plenary.nvim" },

@@ -1,5 +1,7 @@
 return {
   "nvim-lualine/lualine.nvim",
+  lazy = true,
+  event = "VimEnter",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     require("lualine").setup({

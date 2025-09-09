@@ -1,5 +1,7 @@
 return {
 	"akinsho/toggleterm.nvim",
+	lazy = true,
+  keys = "<C-t>",
 	version = "*",
 	opts = {
 		direction = "float",

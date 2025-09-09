@@ -1,5 +1,7 @@
 return {
   "AckslD/swenv.nvim",
+  lazy=true,
+  ft="python",
   config = function()
     local map = vim.keymap.set
     local swenv = require("swenv")

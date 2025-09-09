@@ -1,6 +1,8 @@
 return {
   {
     "catppuccin/nvim",
+    lazy = true,
+    event = "VimEnter",
     name = "catppuccin",
     priority = 1000,
 
@@ -8,7 +10,7 @@ return {
       require("catppuccin").setup({
         -- contrast = "hard",
       })
-      vim.cmd("colorscheme catppuccin")
+      -- vim.cmd("colorscheme catppuccin")
     end,
   },
 }

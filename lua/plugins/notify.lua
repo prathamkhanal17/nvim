@@ -1,5 +1,7 @@
 return {
 	"rcarriga/nvim-notify",
+	lazy = true,
+	event = "VimEnter",
 	config = function()
 		require("notify").setup({
 			timeout = 1000,
