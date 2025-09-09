@@ -10,7 +10,7 @@ return {
 				separator_style = "slant",
 				show_buffer_close_icons = false,
 				show_close_icon = false,
-				always_show_bufferline = true,
+				always_show_bufferline =false,
 				offsets = {
 					{ filetype = "Neotree", text = "File Explorer", highlight = "Directory", text_align = "left" },
 				},
