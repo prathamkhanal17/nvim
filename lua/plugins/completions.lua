@@ -1,5 +1,10 @@
 return {
   {
+    "hrsh7th/cmp-buffer",
+    lazy = true,
+    event = "InsertEnter",
+  },
+  {
     "hrsh7th/cmp-path",
     lazy = true,
     event = "InsertEnter",
