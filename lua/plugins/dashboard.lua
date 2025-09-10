@@ -50,8 +50,6 @@ return {
 					{
 						action = function()
 							vim.api.nvim_input("<cmd>cd ~/.config/nvim<CR>")
-							vim.api.nvim_input("<cmd>edit ~/.config/nvim/init.lua<CR>")
-							vim.api.nvim_input("<cmd>Neotree filesystem reveal right<CR>")
 						end,
 						desc = " Config",
 						icon = " ",
