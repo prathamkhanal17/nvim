@@ -13,7 +13,7 @@ return {
     event = { "BufReadPost", "BufWinEnter"},
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "pyright" },
+        ensure_installed = { "lua_ls", "pyright", "html" },
       })
       vim.keymap.set("n", "<leader>cm", "<cmd>Mason<CR>", { desc = "Mason" })
     end,
@@ -26,6 +26,10 @@ return {
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
       lspconfig.lua_ls.setup({
+
+        capabilities = capabilities,
+      })
+      lspconfig.html.setup({
 
         capabilities = capabilities,
       })
