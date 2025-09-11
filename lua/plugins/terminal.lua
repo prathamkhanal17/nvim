@@ -14,7 +14,7 @@ return {
 				return math.floor(vim.o.lines * 0.6)
 			end,
 		},
-		start_in_insert = true,
+		start_in_insert = false,
 		persist_size = true,
 		close_on_exit = true,
 	},
