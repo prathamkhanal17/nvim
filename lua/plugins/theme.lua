@@ -1,0 +1,1 @@
+/home/pancakes/.config/omarchy/current/theme/neovim.lua
